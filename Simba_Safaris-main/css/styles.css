@@ -1,0 +1,286 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    background-image: url('../images/nature trail.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    background-color: rgba(229, 157, 157, 0.9);
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+form label, form input, form textarea {
+    display: block;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Add new logo styles */
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.logo svg {
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 28px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+/* Trail Cards */
+.trail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.trail-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.trail-card:hover {
+    transform: translateY(-5px);
+}
+
+.trail-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trail-card h3 {
+    padding: 1rem;
+    margin: 0;
+}
+
+.trail-card p {
+    padding: 0 1rem;
+}
+
+.difficulty {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background: #f0f0f0;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Season Cards */
+.season-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.season-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.season-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.season-card li {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.season-card li:before {
+    content: "•";
+    color: #4CAF50;
+    position: absolute;
+    left: 0;
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.feature {
+    text-align: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.feature i {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+/* Footer Styles */
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.footer-section h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #4CAF50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .trail-grid, .season-grid, .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Update the trail card for Karura Forest */
+.trail-card img[alt="Karura Forest"] {
+    background-image: url('../images/karura.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+}
+
+/* Specific styling for Mount Kenya image */
+.trail-card img[alt="Mount Kenya Trail"] {
+    background-image: url('../images/nature trail.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* This ensures the image covers the area properly */
+}
+
+/* Specific styling for Ngong Hills image */
+.trail-card img[alt="Ngong Hills"] {
+    background-image: url('../images/Ngong Hills.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensures proper image coverage */
+}
+
+/* Specific styling for Kijabe Hills image */
+.trail-card img[alt="Kijabe Hills"] {
+    background-image: url('../images/Kijabe hills.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
