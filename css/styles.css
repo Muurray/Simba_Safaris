@@ -6,73 +6,53 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    color: #333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c2c2c;
     line-height: 1.6;
     background-image: url('../images/nature trail.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(34, 49, 63, 0.6);
     background-blend-mode: overlay;
 }
 
+/* Header */
 header {
-    background-color: #4CAF50;
+    background: linear-gradient(90deg, #2c6e49, #4caf50);
     color: white;
-    padding: 1rem;
+    padding: 1rem 0.5rem;
     text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
 
 header nav a {
     color: white;
-    margin: 0 10px;
+    margin: 0 12px;
     text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
 }
 
-header nav a:hover {
-    text-decoration: underline;
+header nav a:hover, header nav a.active {
+    color: #ffe082;
 }
 
-main {
-    padding: 2rem;
-    background-color: rgba(229, 157, 157, 0.9);
-    border-radius: 8px;
-    margin: 2rem auto;
-    max-width: 1200px;
-}
-
-h2 {
-    color: #4CAF50;
-}
-
-form label, form input, form textarea {
-    display: block;
-    margin: 10px 0;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-/* Add new logo styles */
+/* Logo */
 .logo {
     display: flex;
     align-items: center;
     font-family: 'Georgia', serif;
-    font-size: 24px;
-    color: white;
+    font-size: 26px;
     font-weight: bold;
     justify-content: center;
     margin-bottom: 1rem;
+    color: #fff;
 }
 
 .logo svg {
     margin-right: 10px;
+    fill: #ffe082;
 }
 
 .logo span {
@@ -82,54 +62,60 @@ footer {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 4rem 2rem;
-    margin-bottom: 2rem;
+    padding: 5rem 2rem;
+    margin-bottom: 3rem;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.3);
+    border-radius: 10px;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
-    color: white;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 2rem;
-    color: white;
 }
 
 .cta-button {
     display: inline-block;
-    padding: 1rem 2rem;
-    background-color: #4CAF50;
+    padding: 1rem 2.2rem;
+    background-color: #4caf50;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #45a049;
+    background-color: #3b8b3c;
+    transform: translateY(-2px);
 }
 
 /* Trail Cards */
 .trail-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     padding: 2rem 0;
 }
 
 .trail-card {
-    background: white;
-    border-radius: 8px;
+    background: linear-gradient(to bottom, #ffffff, #f0f4f8);
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .trail-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
 
 .trail-card img {
@@ -141,19 +127,22 @@ footer {
 .trail-card h3 {
     padding: 1rem;
     margin: 0;
+    color: #2c6e49;
 }
 
 .trail-card p {
-    padding: 0 1rem;
+    padding: 0 1rem 1rem;
+    color: #444;
 }
 
 .difficulty {
     display: inline-block;
     margin: 1rem;
-    padding: 0.5rem 1rem;
-    background: #f0f0f0;
+    padding: 0.4rem 0.9rem;
+    background: #ffe082;
     border-radius: 20px;
     font-size: 0.9rem;
+    font-weight: 600;
 }
 
 /* Season Cards */
@@ -165,26 +154,27 @@ footer {
 }
 
 .season-card {
-    background: white;
+    background: #ffffffcc;
     padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.season-card ul {
-    list-style-type: none;
-    padding-left: 0;
+.season-card h3 {
+    color: #2c6e49;
+    margin-bottom: 1rem;
 }
 
 .season-card li {
     margin: 0.5rem 0;
     padding-left: 1.5rem;
     position: relative;
+    color: #333;
 }
 
 .season-card li:before {
-    content: "•";
-    color: #4CAF50;
+    content: "✔";
+    color: #4caf50;
     position: absolute;
     left: 0;
 }
@@ -200,45 +190,58 @@ footer {
 .feature {
     text-align: center;
     padding: 1.5rem;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: #ffffffcc;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-4px);
 }
 
 .feature i {
-    font-size: 2rem;
-    color: #4CAF50;
+    font-size: 2.3rem;
+    color: #4caf50;
     margin-bottom: 1rem;
 }
 
 /* Footer Styles */
+footer {
+    background-color: #2c2c2c;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+}
+
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
-    padding: 2rem;
+    padding-bottom: 1rem;
 }
 
 .footer-section h3 {
-    color: white;
+    color: #ffe082;
     margin-bottom: 1rem;
 }
 
 .social-links a {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-right: 1rem;
-    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .social-links a:hover {
-    color: #4CAF50;
+    color: #4caf50;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     
     .trail-grid, .season-grid, .features-grid {
@@ -246,41 +249,41 @@ footer {
     }
 }
 
-/* Update the trail card for Karura Forest */
-.trail-card img[alt="Karura Forest"] {
-    background-image: url('../images/karura.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 200px;
+/* Next Hike Badge */
+.next-hike-badge {
+    display: inline-block;
+    background: #4caf50;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
 }
 
-/* Specific styling for Mount Kenya image */
-.trail-card img[alt="Mount Kenya Trail"] {
-    background-image: url('../images/nature trail.jpeg');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 200px;
-    object-fit: cover; /* This ensures the image covers the area properly */
+/* WhatsApp floating button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25d366;
+    color: white;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 15px 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: transform 0.3s;
 }
 
-/* Specific styling for Ngong Hills image */
-.trail-card img[alt="Ngong Hills"] {
-    background-image: url('../images/Ngong Hills.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 200px;
-    object-fit: cover; /* Ensures proper image coverage */
+.whatsapp-float:hover {
+    transform: scale(1.1);
 }
 
-/* Specific styling for Kijabe Hills image */
-.trail-card img[alt="Kijabe Hills"] {
-    background-image: url('../images/Kijabe hills.jpg');
+/* Hero & overlay improvements */
+.hero {
+    background: linear-gradient(to bottom right, rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('../images/nature trail.jpeg');
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+    border-radius: 12px;
 }
