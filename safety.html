@@ -3,63 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trail Safety - Simba Safaris</title>
+    <title>Trail Safety - Kijabe Adventures</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+<script src="js/next-hike.js"></script>
+
 <body>
-    <header>
-        <h1>Simba Safaris</h1>
-        <nav>
+
+<!-- HEADER -->
+<header class="site-header">
+    <div class="header-container">
+        <h1 class="logo">Kijabe Adventures</h1>
+        <nav class="nav-links">
             <a href="index.html">Home</a>
             <a href="destinations.html">Destinations</a>
-            <a href="safety.html">Trail Safety</a>
+            <a href="safety.html" class="active">Trail Safety</a>
             <a href="donate.html">Support Us</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.html">Contact</a>
         </nav>
-    </header>
+        <!-- Next Hike Badge -->
+    <div id="next-hike-badge" class="next-hike-badge">
+      🌄 Next Hike: Loading...
+    </div>
+  </div>
+</header>
 
-    <main>
-        <h2>Trail Safety & Tips</h2>
-        <ul>
-            <li>Check weather forecasts before heading out.</li>
-            <li>Stay on marked trails to preserve the environment.</li>
-            <li>Pack plenty of water and snacks for your hike.</li>
-            <li>Carry a basic first-aid kit and let someone know your hiking plans.</li>
-        </ul>
-    </main>
+<!-- MAIN CONTENT -->
+<main class="page-content">
+
+    <!-- HERO -->
+    <section class="page-hero">
+        <h2>Trail Safety & Hiking Tips</h2>
+        <p>Your safety is our top priority. Follow these guidelines to enjoy a safe and memorable hiking experience.</p>
+    </section>
+
+    <!-- SAFETY GRID -->
+    <section class="safety-section">
+        <div class="safety-grid">
+
+            <div class="safety-card">
+                <h3>🌦 Check Weather</h3>
+                <p>Always review weather forecasts before hiking. Avoid trails during heavy rain or storms.</p>
+            </div>
+
+            <div class="safety-card">
+                <h3>🗺 Stay on Trails</h3>
+                <p>Stick to marked paths to protect nature and avoid getting lost or injured.</p>
+            </div>
+
+            <div class="safety-card">
+                <h3>💧 Stay Hydrated</h3>
+                <p>Carry enough water and snacks to keep your energy levels up during the hike.</p>
+            </div>
+
+            <div class="safety-card">
+                <h3>🩹 Be Prepared</h3>
+                <p>Bring a basic first-aid kit and inform someone about your hiking plan.</p>
+            </div>
+
+        </div>
+    </section>
+
+</main>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-content">
+    <div class="footer-content">
 
-    <div class="footer-section">
-      <h3>Contact</h3>
-      <p><i class="fas fa-phone"></i> +254 743 980 340</p>
-      <p><i class="fas fa-envelope"></i> info@kijabeadventures.com</p>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>📞 +254 743 980 340</p>
+            <p>✉ info@kijabeadventures.com</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Support Us</h3>
+            <p>Help us promote safe hiking and conservation.</p>
+            <a href="donate.html" class="cta-button">Donate via M-Pesa / PayPal</a>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+
     </div>
 
-    <div class="footer-section">
-      <h3>Support Us</h3>
-      <p>Help us promote safe hiking & conservation.</p>
-      <a href="donate.html" class="cta-button">Donate via M-Pesa / PayPal</a>
-    </div>
-
-    <div class="footer-section">
-      <h3>Follow Us</h3>
-      <div class="social-links">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-      </div>
-    </div>
-
-  </div>
-
-  <p class="copyright">
-    © 2025 Kijabe Adventures. All rights reserved.
-  </p>
+    <p class="copyright">
+        © 2025 Simba Safaris. All rights reserved.
+    </p>
 </footer>
 
 </body>
 </html>
-
