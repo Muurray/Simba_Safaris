@@ -22,7 +22,10 @@
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-</head>
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#4caf50">
+<link rel="canonical" href="https://kijabeadventures.com/" />
+      </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T50VJ5C9XV"></script>
 <script>
@@ -57,6 +60,11 @@
     "@type": "Country",
     "name": "Kenya"
   }
+}
+</script>
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/sw.js");
 }
 </script>
 
@@ -126,6 +134,12 @@
      target="_blank">
     Book via WhatsApp
   </a>
+  <a href="https://wa.me/254743980340?text=I%20have%20paid%20via%20M-Pesa.%20My%20name%20is%20_____"
+   class="cta-button"
+   target="_blank">
+  Pay via M-Pesa & Confirm
+</a>
+
 </section>
 
 
